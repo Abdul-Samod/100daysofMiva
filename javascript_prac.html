@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h1>My First JavaScript</h1>
+    <p id="demo">This is my first JavaScript Code</p>
+
+    <script>
+        // Declaring and assigning variables
+        let x = 6;
+        let y = 10;
+        let z = x + y;
+
+        // Changing HTML content 
+        document.getElementById("demo").innerHTML = z;
+
+        // Scope of declaring variables
+        // Block Scope: Variable cannot be accessed from
+        //  outside the block
+        {
+            let x = 5;
+        }
+
+        /* Global Scope: Variable declared with var
+        inside a block can be accessed from outside the block*/  
+        {
+            var m = 6;
+        }
+
+        /* Const keyword: Used to declare variables but 
+        cannot be reassigned but values in the variable can be changed*/
+        const candidate = {name: "Abdul", gender: "male", nationality: "Nigerian"}
+
+        // Changing its values
+        candidate.name = "Samod";
+
+        // Adding values
+        candidate.age = 18;
+
+        // Arithmetic Operators
+        // Addition
+        let a = 10;
+        let b = 20;
+        let c = 30;
+
+        let num1 = a + b;
+        
+        //Subtraction
+        let num2 = c - b;
+        
+        // Multiplication
+        let num3 = a * c;
+
+        // Exponentiation
+        let num4 = a**2;
+
+        // Division
+        let num5 = b / a;
+
+        // Modulus
+        let num6 = b % 3
+    </script>
+</body>
+</html>
