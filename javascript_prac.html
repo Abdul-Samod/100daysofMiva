@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">git status
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h1>My First JavaScript</h1>
+    <p id="demo">This is my first JavaScript Code</p>
+    <p id="demo2"></p>
+
+    <script>
+        // Declaring and assigning variables
+        let x = 6;
+        let y = 10;
+        let z = x + y;
+
+        // Changing HTML content 
+        document.getElementById("demo").innerHTML = z;
+
+        // Scope of declaring variables
+        // Block Scope: Variable cannot be accessed from
+        //  outside the block
+        {
+            let x = 5;
+        }
+
+        /* Global Scope: Variable declared with var
+        inside a block can be accessed from outside the block*/  
+        {
+            var m = 6;
+        }
+
+        /* Const keyword: Used to declare variables but 
+        cannot be reassigned but values in the variable can be changed*/
+        const candidate = {name: "Abdul", gender: "male", nationality: "Nigerian"}
+
+        // Changing its values
+        candidate.name = "Samod";
+
+        // Adding values
+        candidate.age = 18;
+
+        // Arithmetic Operators
+        // Addition
+        let a = 10;
+        let b = 20;
+        let c = 30;
+
+        let num1 = a + b;
+        
+        //Subtraction
+        let num2 = c - b;
+        
+        // Multiplication
+        let num3 = a * c;
+
+        // Exponentiation
+        let num4 = a**2;
+
+        // Division
+        let num5 = b / a;
+
+        // Modulus
+        let num6 = b % 3;
+
+        // Assignment Operators
+        // Simple assignment operator assigns value to a variable
+        let year = 2024;
+
+        // Addition assignment operator adds a value to a variable
+        let name = "Abdul";
+        name += "Samod";
+
+        // Subtraction assignment operator subtracts a value from a variable
+        let num7 = 25;
+        num7 -= 5;
+
+        // Multiplication assignment operator multiplies a variable
+        let num8 = 2;
+        num8 *= 15;
+
+        // Exponentiation assignment operator raises a variable to a power
+        let num9 = 3;
+        num9 **= 3;
+
+        // Division assignment operator divides a variable
+        let num10 = 25;
+        num10 /= 5;
+
+        // Remainder assignment operator assigns a remainder to a variable
+        let num11 = 32;
+        num11 %= 3; 
+        
+        /*Logical AND assignment operator: If first value is true, 
+        second value is assigned */
+        let num12 = 5 > 3; 
+        num12 &&= 8;
+
+        /*Logical OR assignment operator: If first value is false,
+        second value is assigned*/
+        let num13 = 3 > 5;
+        num13 ||= 15;
+
+        /*Null coalescing assignment operator: If first value is undefined 
+        or null, second value is assigned*/
+        let num14;
+        num14 ??= 100;
+
+        // JavaScript Datatypes
+        // Strings
+        let boyName = "Ade";
+        let sentence = "This is Ade's book";
+
+        // Numbers
+        let n1 = 20;
+        let n2 = 10.50; /*floating point*/
+
+        /* Exponential Notation: extremely large or small numbers written
+        with scientific notation*/ 
+        let n3 = 162e5;
+        let n4 = 162e-5; 
+
+        /* BigInt: for values too big to be represented 
+        by a normal JavaScript number*/ 
+        let n5 = BigInt("253536647837363634737968897765");
+
+        /* Booleans: can only be true or false*/ 
+        let n6 = 15;
+        let n7 = 15;
+        let n8 = 22;
+        /*(n6 == n7) Returns true*/
+        /*(n6 == n8) Returns false*/
+
+        /*Arrays are written with square brackets and used 
+        to declare multiple values*/
+        const phones = ["Huawei", "Infinix", "Tecno"];
+
+        /*Array indexes are zero based*/
+        document.getElementById("demo2").innerHTML = phones[0];
+
+        /*Objects*/
+        const person = {firstName: "Ade", lastName: "Ola", age: 20,
+            eyeColor: "brown"
+         };
+		 const scores = {
+            student1: 20,
+            student2: 35,
+            student3: 45,
+        };
+        // Adding variables
+        person.tall = true;
+
+        // Modifying variables
+        person.eyeColor = "blue";
+
+        // typeof Operator returns the type of variable or expression
+        document.getElementById("demo3").innerHTML = typeof person;
+        document.getElementById("demo4").innerHTML = typeof sentence;
+
+        // Undefined variables
+        let title;
+        title = undefined;
+
+        // Empty values
+        title = "" /*type of: string*/
+    </script>
+</body>
+</html>
