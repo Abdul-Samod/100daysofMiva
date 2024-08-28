@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        /*JavaScript Functions: block of code designed to perform a particular task
+and can be called anytime in the code*/
+
+// Function to compute the product of num1 and num2
+function myFunction(num1, num2) {
+    return num1 * num2;
+}
+
+let result = myFunction(4, 5);
+document.getElementById("demo").innerHTML = result;
+
+// Declaring a variable with a function
+function calculate(a, b) {
+  return a * b;
+}
+
+let x = calculate(4, 3);
+
+// Convert ml to litre function
+function convert(ml) {
+    return ml/1000;
+}
+
+let answer = convert(2000); /*the () operator calls the function*/
+document.getElementById("demo2"). innerHTML = answer;
+
+// Using function as variable value
+let text = "Measurement in litre is" + " " + convert(2000) + " " + "litres";
+document.getElementById("demo3").innerHTML = text;
+
+// Local Variables: variables declared within a function remain in the function
+function name() {
+    let name = "Mark";
+}
+
+let name = "Mark"
+    </script>
+    </body>
+</html>
+
+
+
