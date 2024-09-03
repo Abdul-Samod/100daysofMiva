@@ -47,6 +47,52 @@ function name() {
 }
 
 let name = "Mark"
+// Operations on JavaScript Objects
+const person = {
+    firstName: "Mark",
+    lastName: "Smith",
+    age: 25,
+    gender: "male"
+};
+// Accessing object properties
+person.firstName /*prints first name*/
+person.age /*prints age*/
+
+// Object Methods are actions that can be performed on objects
+const student = {
+    name: "James",
+    class: "100lvl",
+    grade: "A",
+    report: function () {
+        return this.name + " got " + " an " + this.grade;
+    }
+};
+
+document.getElementById("demo4").innerHTML= student.report();
+
+// Deleting properties
+delete person.gender;
+
+// Displaying object properties(person object declared above)
+// Displaying as a string
+document.getElementById("demo5").innerHTML = person.firstName + " " + person.lastName + " is " 
++ person.age;
+
+// Displaying in a loop
+let words = " ";
+for (let x in person) {
+    words += person[x] + " ";
+};
+
+document.getElementById("demo6").innerHTML = words;
+
+// Displaying in an arrray(using Object.values)
+const words_array = Object.values(person);
+document.getElementById("demo7").innerHTML = words_array;
+
+// Using JSON.stringify():displays in JSON notation
+let myString = JSON.stringify(person);
+document.getElementById("demo8").innerHTML = myString;
     </script>
     </body>
 </html>
