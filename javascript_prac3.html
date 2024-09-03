@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Strings</title>
+</head>
+<body>
+    <h1>JavaScript Events</h1>
+    <!-- Events are actions that occur on a webpage such as a webpage loading,
+     a button clicked, page resized and so on. JavaScript can be used to cause 
+     certain reactions when these events happen. -->
+    <p id="demo"></p>
+
+    <!-- Here, the page displays the date and time when the button is clicked -->
+    <button onclick = "document.getElementById('demo').innerHTML = Date()">The time is?</button>
+    
+    <!-- Changing the content of its own element -->
+     <button onclick="this.innerHTML = 'Submitted' ">Submit</button>
+
+    <!-- Calling a function after an event-->
+    <p id="demo2"></p>
+    <button onclick="displayDate()">Date and Time</button>
+    
+    <script>
+        function displayDate() {
+            
+            document.getElementById("demo2").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>
